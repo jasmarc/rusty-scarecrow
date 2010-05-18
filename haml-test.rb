@@ -21,8 +21,14 @@ __END__
 %html
   %head
     %link{:rel => 'stylesheet', :href => '/stylesheet.css', :type => 'text/css'}
-    %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}/
-
+    %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
+    %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js', :type => 'text/javascript'}
+    %script
+      $(document).ready(function() {
+      $("input[type='button']").click(function() {
+      alert($("input[type='text']").val());
+      });
+      });
   %body
     #container= yield
     #footer
@@ -30,7 +36,8 @@ __END__
 
 @@hello
 %h1 title
-%p hello world
+%input{:type => 'textbox'}
+%input{:type => 'button', :value => 'hello2'} 
 
 @@stylesheet
 body
