@@ -7,7 +7,7 @@ require 'pp'
 
 configure do
   DB = Mongo::Connection.new("flame.mongohq.com", 27036).db("jasontest")
-  DB.authenticate("jason", "pass")
+  DB.authenticate("jason", "xxxx")
   Coll = DB.collection("todo items")
 end
 
