@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/reloader'
 require 'haml'
 require 'sass'
 require 'pp'
@@ -26,19 +27,21 @@ __END__
     %script
       $(document).ready(function() {
       $("input[type='button']").click(function() {
-      alert($("input[type='text']").val());
+      $("ul").append("<li>").append($("input[type='text']").val()).append("</li>");
       });
       });
   %body
     #container= yield
     #footer
-      Messing around with Sinatra, HAML, Mongo, Sass, etc.
+      Messing around with web technologies. Source
+      %a{:href => 'http://github.com/jasmarc/rusty-scarecrow'} here
+      \.
 
 @@hello
-%h1 title
+%h1 rusty scarecrow
 %input{:type => 'textbox'}
-%input{:type => 'button', :value => 'hello2'} 
-
+%input{:type => 'button', :value => 'hello'} 
+%ul
 @@stylesheet
 body
   :font-family "Lucida Grande", sans-serif
