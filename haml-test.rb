@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'sinatra/reloader'
 require 'haml'
 require 'sass'
 require 'pp'
@@ -24,12 +23,8 @@ __END__
     %link{:rel => 'stylesheet', :href => '/stylesheet.css', :type => 'text/css'}
     %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
     %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js', :type => 'text/javascript'}
-    %script
-      $(document).ready(function() {
-      $("input[type='button']").click(function() {
-      $("ul").append("<li>").append($("input[type='text']").val()).append("</li>");
-      });
-      });
+    %script{:src => 'main.js', :type => 'text/javascript'}
+    %script $(document).ready(main);
   %body
     #container= yield
     #footer
@@ -39,8 +34,9 @@ __END__
 
 @@hello
 %h1 rusty scarecrow
-%input{:type => 'textbox'}
-%input{:type => 'button', :value => 'hello'} 
+#myform
+  %input{:type => 'textbox'}
+  %input{:type => 'submit', :value => 'hello'} 
 %ul
 @@stylesheet
 body

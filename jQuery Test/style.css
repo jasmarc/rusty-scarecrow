@@ -1,0 +1,40 @@
+.coolstuff {
+background:#F7F7F7 none repeat scroll 0 0;
+border:1px solid #DDD;
+font-size:.9em;
+padding:5;
+margin:7 0 7 0;
+}
+
+.remove_cat, .add_cat {
+float: right;
+margin: 1 1 1 1
+}
+
+.addremovebuttons {
+//border:1px solid #DDD;
+}
+
+.category_block {
+//border:1px solid #DDD;
+}
+
+body {
+font-family:verdana, arial, helvetica, sans-serif;
+text-align:center;
+margin:0;
+padding:0;
+}
+
+#content {
+border:1px solid #ccc;
+text-align:left;
+voice-family:inherit;
+width:370px;
+margin:20px auto;
+padding: 5 5 20 5
+}
+
+html>body #content {
+width:370px;
+}
