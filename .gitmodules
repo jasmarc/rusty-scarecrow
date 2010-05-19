@@ -1,0 +1,3 @@
+[submodule "sinatra"]
+	path = sinatra
+	url = /home/jmarcell/sinatra
