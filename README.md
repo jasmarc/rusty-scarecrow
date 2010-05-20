@@ -10,7 +10,9 @@ I used a [project name generator](http://online-generator.com/name-generator/pro
 for two reasons:
 
 1. I have no specific end goal for this project other than to tinker with a number of different technologies.
-2. The technologies that will be incorporated into this project will be ever-shifting, thus I can't, for example, call it mongo-test-project or haml-test-project because I may not be using those technologies tomorrow.
+2. The technologies that will be incorporated into this project will be ever-shifting.
+
+Thus any name I could choose that might be indicative of the projects functionality or technologies is susceptible to rapid obsolescence -- so an arbitrary name is better than a continuously obsolete name.
 
 So, what are you playing with?
 ------------------------------
