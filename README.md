@@ -12,7 +12,7 @@ for two reasons:
 1. I have no specific end goal for this project other than to tinker with a number of different technologies.
 2. The technologies that will be incorporated into this project will be ever-shifting.
 
-Thus any name I could choose that might be indicative of the projects functionality or technologies is susceptible to rapid obsolescence -- so an arbitrary name is better than a continuously obsolete name.
+Thus any name I could choose that might be indicative of the project's functionality or technologies is susceptible to rapid obsolescence -- so an arbitrary name is better than a continuously obsolete name.
 
 So, what are you playing with?
 ------------------------------
