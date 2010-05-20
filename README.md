@@ -1,4 +1,4 @@
-Rusy Scarecrow
+Rusty Scarecrow
 ==============
 What is this?
 -------------
