@@ -37,7 +37,7 @@ __END__
 %h1 rusty scarecrow
 #myform
   %input{:type => 'textbox'}
-  %input{:type => 'submit', :value => 'hello'} 
+  %img{:src => 'add.png'} 
 %ul{:id => 'sortable'}
 
 @@stylesheet
