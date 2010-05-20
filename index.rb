@@ -22,7 +22,8 @@ __END__
   %head
     %link{:rel => 'stylesheet', :href => '/stylesheet.css', :type => 'text/css'}
     %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
-    %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js', :type => 'text/javascript'}
+    %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', :type => 'text/javascript'}
+    %script{:src => 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js', :type => 'text/javascript'}
     %script{:src => 'main.js', :type => 'text/javascript'}
     %script $(document).ready(main);
   %body
@@ -37,7 +38,7 @@ __END__
 #myform
   %input{:type => 'textbox'}
   %input{:type => 'submit', :value => 'hello'} 
-%ul
+%ul{:id => 'sortable'}
 
 @@stylesheet
 body
@@ -60,3 +61,5 @@ h1,h2,h3,h4,h5,h6
   :color #2D5E32
   a
     :color #2D5E32
+#sortable
+  :list-style-type none

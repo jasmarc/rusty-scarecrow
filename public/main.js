@@ -1,7 +1,7 @@
 function main() {
   $("#myform").submit(function() {
-    $("ul").append("<li>" + $("input[type='text']").val() + "</li>");
-    $("input[type='text']").val("");
+    $("ul").append("<li><input type='checkbox' />" + $("input[type='textbox']").val() + "</li>");
+    $("input[type='textbox']").val("");
   });
 
   $(document).keyup(function(event) {
@@ -12,8 +12,7 @@ function main() {
   
   $("input[type='submit']").click(function() {
     $("#myform").submit();
-  })
+  });
+  
+  $("#sortable").sortable();
 }
-
-
-
