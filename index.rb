@@ -21,9 +21,14 @@ __END__
 %html
   %head
     %link{:rel => 'stylesheet', :href => '/stylesheet.css', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => 'jquery-ui-1.8.1.custom/development-bundle/themes/le-frog/jquery.ui.core.css', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => 'jquery-ui-1.8.1.custom/development-bundle/themes/le-frog/jquery.ui.theme.css', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => 'jquery-ui-1.8.1.custom/development-bundle/themes/le-frog/jquery.ui.progressbar.css', :type => 'text/css'}
     %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
-    %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', :type => 'text/javascript'}
-    %script{:src => 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js', :type => 'text/javascript'}
+    %script{:src => 'jquery-ui-1.8.1.custom/development-bundle/jquery-1.4.2.js', :type => 'text/javascript'}
+    %script{:src => 'jquery-ui-1.8.1.custom/development-bundle/ui/jquery.ui.core.js', :type => 'text/javascript'}
+    %script{:src => 'jquery-ui-1.8.1.custom/development-bundle/ui/jquery.ui.widget.js', :type => 'text/javascript'}
+    %script{:src => 'jquery-ui-1.8.1.custom/development-bundle/ui/jquery-ui-1.8.1.custom.js', :type => 'text/javascript'}
     %script{:src => 'main.js', :type => 'text/javascript'}
     %script $(document).ready(main);
   %body
@@ -39,6 +44,7 @@ __END__
   %input{:type => 'textbox'}
   %img{:src => 'add.png'} 
 %ul{:id => 'sortable'}
+%div{:id => 'progressbar'}
 
 @@stylesheet
 body
