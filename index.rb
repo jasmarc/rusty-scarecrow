@@ -38,6 +38,7 @@ __END__
   %input{:type => 'textbox'}
   %input{:type => 'submit', :value => 'hello'} 
 %ul
+
 @@stylesheet
 body
   :font-family "Lucida Grande", sans-serif
